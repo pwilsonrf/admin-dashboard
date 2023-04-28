@@ -17,6 +17,8 @@
 
     display: grid;
     grid-template-rows: 100px 100px;
+
+    box-shadow: 0 6px 4px -4px rgba(0,0,0,0.3); 
     
 }
 
@@ -289,4 +291,77 @@ input.nosubmit {
     font-weight: 700;
     color: #583D72;
      
+}
+
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-bottom-left{
+    display: flex;
+    padding-left: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.initials{
+    height: 50px;
+    width: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ 
+
+}
+
+
+/*Header Bottom Styling*/
+.initials p {
+    font-size: 16px;
+    font-family: Roboto;
+    color: #583D72;
+}
+
+.greeting p{
+    font-size: 24px;
+    color: #583D72;
+    font-family: Roboto;
+    margin: auto 0 auto 0;
+
+}
+
+#greeting-text{
+    font-size: 14px;
+    color: #79869F;
+}
+
+.img-container img {
+    width: 50px;
+}
+
+.header-bottom-right{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    gap: 30px;
+}
+
+
+.header-bottom-right button{
+    width: 160px;
+    height: 35px;
+    background-color: #583D72;
+    border: 1px solid rgb(0,0,0,0.2);
+    border-radius: 15px;
+
+    font-size: 18px;
+    color: #FAFAFA;
+    font-family: Roboto;
 }
