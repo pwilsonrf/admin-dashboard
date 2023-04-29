@@ -3,8 +3,7 @@
     grid-template-columns: 300px 1fr;
     grid-template-rows: 200px 1fr;
     
-
-    height: 100vh;
+  
     
     background-color: #E5E5E5;
 }
@@ -14,6 +13,7 @@
 .header{
     background-color: #FFFFFF;
     grid-column: 2/3;
+    grid-row: 1/2;
 
     display: grid;
     grid-template-rows: 100px 100px;
@@ -37,6 +37,7 @@
 
 .main-content{
     grid-column: 2/3;
+    grid-row: 2/span 1;
 }
 
 .dashboard-logo img{
@@ -83,8 +84,6 @@
 .projects p{
 
     color: #FFFFFF;
-    
-
 
 }
 
@@ -364,4 +363,256 @@ input.nosubmit {
     font-size: 18px;
     color: #FAFAFA;
     font-family: Roboto;
+}
+
+.main-content-container{
+    padding-top: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+
+    height: 100vh;
+}
+
+.main-content-left{
+    height: 100px;
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+
+}
+
+.main-content-right{
+    display: grid;
+
+    grid-template-rows: 200px 300px;
+    gap: 50px;
+
+    
+
+}
+
+.main-content-tasks{
+    
+    margin: 0px 20px 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main-content-announcements{
+  
+    height: 200px;
+
+    margin: 0px 20px 0px 20px;
+}
+
+.main-content-tasks h2{
+    margin-top: 0px;
+    padding-top: 0px;
+
+    font-size: 20px;
+    color: #583D72;
+    font-weight: 500;
+    
+    font-family: Roboto;
+
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+}
+
+.items-container p{
+    font-size: 14px;
+    color:  #79869F;
+    font-family: Roboto;
+
+    margin: 0px;
+}
+
+.items-container h3{
+    font-size: 18px;
+    color: #583D72;
+    font-family: Roboto;
+    margin: 0px;
+}
+
+.items-container{
+    background-color: #FAFAFA;
+    
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    border: 0.25px solid rgba(88,61,114,0.2);
+}
+
+hr{
+   
+    border: 0.125px solid rgba(88,61,114,0.2);
+    width: 100%;
+   
+
+}
+
+.main-content-announcements h2{
+    font-size: 20px;
+    color: #583D72;
+    
+    font-family: Roboto;
+
+    padding: 0px 0px 5px 10px;
+    margin: 0px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options-items{
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.options-items h1{
+    font-size: 16px;
+    color: #583D72;
+    
+    font-family: Roboto;
+
+    padding: 0px 0px 5px 10px;
+    margin: 0px;
+}
+
+.projects-header h2{
+    
+
+    margin-top: 0px;
+    padding-top: 0px;
+
+    font-size: 30px;
+    color: #583D72;
+    font-weight: 500;
+    
+    font-family: Roboto;
+
+    padding: 0px 0px 0px 30px;
+    margin: 0px;
+
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    margin: 20px 0px 0px 20px;
+    gap: 50px;
+    align-items:flex-start;
+}
+
+.projects-item{
+
+    width: 300px;
+    height: auto;
+    gap: 20px;
+
+    background-color: #FAFAFA;
+    
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    border: 0.25px solid rgba(88,61,114,0.2);
+
+   
+    justify-content: space-between;
+
+}
+
+.projects-item h3{
+
+
+    margin-top: 0px;
+    padding-top: 0px;
+
+    font-size: 20px;
+    color: #583D72;
+    font-weight: 500;
+    
+    font-family: Roboto;
+
+    padding: 0px 0px 0px 00px;
+    margin: 0px;
+
+}
+
+.projects-item p{
+    font-size: 14px;
+    color:  #79869F;
+    font-family: Roboto;
+
+    margin: 0px;
+    
+}
+
+.status{
+    align-self: bottom;
+    display: flex;
+    justify-content: flex-end;
+    
+    gap: 5px;
+}
+
+.unstarted{
+    width: 90px;
+    height: 20px;
+    background-color: rgba(121,134,159,0.3);
+    border-radius: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.in-progress{
+    width: 90px;
+    height: 20px;
+    background-color: #03C988;
+    border-radius: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.due-soon{
+    width: 90px;
+    height: 20px;
+    background-color: #FF6D60;
+    border-radius: 15px;
+    padding: 3px;
+    text-align: center;
+    
+    font-size: 16px;
+}
+
+.projects-item-icons img{
+    width: 30px;
+    filter: invert(54%) sepia(12%) saturate(637%) hue-rotate(181deg) brightness(94%) contrast(90%);
+}
+
+.projects-item-icons{
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px;
+
+}
+
+.projects-item-info{
+    position: relative;
+    top: -45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
